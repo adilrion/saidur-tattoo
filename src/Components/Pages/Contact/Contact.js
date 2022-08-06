@@ -106,12 +106,9 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="text-white bg-[#e8dc36]  focus:ring-4 focus:ring-[#e8dc36] font-medium text-md w-full sm:w-auto px-10 py-2.5 text-center inline-flex items-start gap-1"
+                className="text-white bg-[#e8dc36]  focus:ring-4 focus:ring-[#e8dc36] font-medium text-md w-full md:w-fit px-10 py-2.5 text-center  gap-1 inline-flex justify-center"
               >
-                Send{" "}
-                <span>
-                  <RiSendPlaneLine />
-                </span>
+                Send <RiSendPlaneLine />
               </button>
             </form>
           </div>

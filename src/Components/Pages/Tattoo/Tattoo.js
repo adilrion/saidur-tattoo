@@ -40,7 +40,7 @@ const Tattoo = () => {
         <div className="">
           <div>
             <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">
-              Recent Works:
+              Recent Works
             </h1>
           </div>
           <div>

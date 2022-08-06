@@ -29,7 +29,7 @@ const Service = () => {
                 For premium result, at our barbershop we combine modern technics
                 with traditional ones
               </p>
-              <p className="text-sm text-[#e8dc36] pt-1">From: 100 BDT</p>
+              <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
             </div>
             <div className="col-span-4 ">
               <img
@@ -55,7 +55,7 @@ const Service = () => {
                 For premium result, at our barbershop we combine modern technics
                 with traditional ones
               </p>
-              <p className="text-sm text-[#e8dc36] pt-1">From: 100 BDT</p>
+              <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
             </div>
           </div>
           <div className="col-span-1 grid grid-cols-12 gap-5  c-bg rounded overflow-hidden">
@@ -67,7 +67,7 @@ const Service = () => {
                 For premium result, at our barbershop we combine modern technics
                 with traditional ones
               </p>
-              <p className="text-sm text-[#e8dc36] pt-1">From: 100 BDT</p>
+              <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
             </div>
             <div className="col-span-4 ">
               <img
@@ -93,7 +93,7 @@ const Service = () => {
                 For premium result, at our barbershop we combine modern technics
                 with traditional ones
               </p>
-              <p className="text-sm text-[#e8dc36] pt-1">From: 100 BDT</p>
+              <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
             </div>
           </div>
         </div>

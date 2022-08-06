@@ -1,0 +1,30 @@
+.art-section {
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.art-images {
+  transition: all 0.9s ease-in-out;
+}
+.art-section:hover .art-images {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.text {
+  font-family: "Delius", cursive;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #d6d6d6;
+  font-size: 1rem;
+  display: none;
+  transition: all 0.9s ease-in-out;
+}
+.art-section:hover .text {
+  font-size: 1.3rem;
+  padding: 0;
+  display: block;
+}
