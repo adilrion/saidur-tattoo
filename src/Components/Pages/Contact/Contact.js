@@ -51,11 +51,11 @@ const Contact = () => {
               </p>
               <div className="c-address-details">
                 <h3>Email</h3>
-                <p>diuieee@gmail.com</p>
+                <p>ejildsfeee@gmail.com</p>
               </div>
             </div>
           </div>
-          <div className="col-span-1 m-[15px] mx-7">
+          <div className="col-span-1 my-[15px]">
             <form>
               <div className="relative z-0 w-full group ">
                 <input

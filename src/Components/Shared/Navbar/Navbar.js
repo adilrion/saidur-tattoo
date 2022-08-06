@@ -3,6 +3,7 @@ import { ImPhone } from "react-icons/im";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { HashLink } from "react-router-hash-link";
+// import logo from "../../../Assets/logo.png";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
@@ -24,6 +25,9 @@ const Navbar = () => {
             to="home"
             className="text-[#e8dc36] text-3xl font-bold uppercase"
           >
+            {/* <span>
+              <img src={logo} alt="Logo" />
+            </span>{" "} */}
             Lakshmi
           </Link>
           <div className="md:hidden">
