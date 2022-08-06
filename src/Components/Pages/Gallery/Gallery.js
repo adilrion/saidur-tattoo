@@ -37,7 +37,7 @@ const gallery = [
 
 const Gallery = () => {
   return (
-    <div className="c-display md:pt-8 pt-8">
+    <div id="gallery" className="c-display md:pt-8 pt-8">
       <div>
         <div>
           <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">

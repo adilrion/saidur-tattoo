@@ -62,7 +62,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="block py-3.5 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2 border-gray-300 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
+                  className="block py-3.5 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2 border-gray-500 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
                   placeholder=" "
                   required=""
                 />
@@ -77,7 +77,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="floating_email"
-                  className="block py-3.5 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2 border-gray-300 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
+                  className="block py-3.5 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2 border-gray-500 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
                   placeholder=" "
                   required=""
                 />
@@ -93,7 +93,7 @@ const Contact = () => {
                   rows="5"
                   type="text"
                   name="floating_email"
-                  className="block py-4 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2  appearance-none border-gray-300 focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
+                  className="block py-4 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2  appearance-none border-gray-500 focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
                   placeholder=" "
                   required=""
                 />

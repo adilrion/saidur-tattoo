@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { ImPhone } from "react-icons/im";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { HashLink } from "react-router-hash-link";
+
 const Navbar = () => {
   const [state, setState] = useState(false);
 
   // Replace javascript:void(0) path with your path
   const navigation = [
-    { title: "Home", path: "/home" },
-    { title: "Gallery", path: "/gallery" },
-    { title: "Service", path: "/service" },
-    { title: "About", path: "/about" },
-    { title: "Contact", path: "/contact" },
+    { title: "Home", path: "/home#home" },
+    { title: "Gallery", path: "/home#gallery" },
+    { title: "Service", path: "/home#service" },
+    { title: "About", path: "/home#about" },
+    { title: "Contact", path: "/home#contact" },
   ];
 
   return (
@@ -69,13 +71,17 @@ const Navbar = () => {
           <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item, index) => {
               return (
-                <Link
-                  to={item.path}
+                <HashLink
                   key={index}
+                  as={HashLink}
+                  to={item.path}
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
                   className="text-gray-200 text-lg block"
                 >
                   {item.title}
-                </Link>
+                </HashLink>
               );
             })}
           </ul>

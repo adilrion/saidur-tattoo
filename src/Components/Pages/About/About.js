@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="c-display">
+    <section id="about" className="c-display">
       <div className="grid grid-cols-12 gap-5 md:pt-16 pt-8">
         <div className="col-span-12 lg:col-span-4 md:col-span-5 ">
           <img

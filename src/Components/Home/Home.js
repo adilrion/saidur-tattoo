@@ -10,13 +10,11 @@ import Navbar from "../Shared/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Navbar />
-
       <Header />
       <About />
       <Service />
-
       <Tattoo />
       <Gallery />
       <Contact />
