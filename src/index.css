@@ -22,3 +22,6 @@ code {
 .title {
   @apply text-gray-50 text-4xl md:text-4xl lg:text-5xl capitalize font-bold;
 }
+.s-icon {
+  @apply w-fit h-fit rounded p-2;
+}

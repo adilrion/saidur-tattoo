@@ -1,4 +1,5 @@
 import React from "react";
+import Social from "../../Util/Social";
 import Header from "../Header/Header";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
@@ -18,6 +19,9 @@ const Home = () => {
       <Tattoo />
       <Gallery />
       <Contact />
+      <div className="fixed top-2/4 z-[1000] right-0 -translate-y-2/4">
+        <Social />
+      </div>
       <Footer />
     </div>
   );
