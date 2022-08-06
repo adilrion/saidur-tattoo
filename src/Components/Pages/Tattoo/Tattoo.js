@@ -64,7 +64,7 @@ const Tattoo = () => {
                     <img
                       src={data.img}
                       alt=""
-                      className="aspect-video object-center object-cover w-full h-[200px] md:h-[300px]  block "
+                      className="aspect-video object-center object-cover w-full h-[200px  ] md:h-[300px]  block "
                     />
                   </SwiperSlide>
                 );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ImPhone } from "react-icons/im";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
@@ -78,12 +79,9 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <div className="hidden md:inline-block">
-          <Link
-            to="/home"
-            className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow"
-          >
-            Call us
+        <div className="hidden md:inline-block md:flex items-center">
+          <Link to="/home" className="rounded-full">
+            <ImPhone className="text-[#e8dc36] text-3xl " />
           </Link>
         </div>
       </div>
