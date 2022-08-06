@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "../../Shared/Footer/Footer";
+import Navbar from "../../Shared/Navbar/Navbar";
 import "./Gallery.css";
 const gallery = [
   {
@@ -37,41 +39,45 @@ const gallery = [
 
 const Gallery = () => {
   return (
-    <div id="gallery" className="c-display md:pt-8 pt-8">
-      <div>
+    <>
+      <Navbar />
+      <div id="gallery" className="c-display md:pb-14 py-8">
         <div>
-          <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">
-            Gallery
-          </h1>
-        </div>
-        <div className="grid grid-cols-4 grid-flow-row-dense gap-2 relative ">
-          {gallery?.map((data, index) => {
-            return (
-              <div
-                key={index}
-                className={`${
-                  index % 2 === 0
-                    ? "col-span-4 md:col-span-1"
-                    : "col-span-4 md:col-span-2"
-                } w-full h-full max-h-[450px] art-section  bg-transparent`}
-              >
-                <img
-                  src={data?.img}
-                  alt="#"
-                  className="w-full h-full object-center object-cover aspect-video  art-images "
-                />
+          <div>
+            <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">
+              Gallery
+            </h1>
+          </div>
+          <div className="grid grid-cols-4 grid-flow-row-dense gap-2 relative ">
+            {gallery?.map((data, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`${
+                    index % 2 === 0
+                      ? "col-span-4 md:col-span-1"
+                      : "col-span-4 md:col-span-2"
+                  } w-full h-full max-h-[450px] art-section  bg-transparent`}
+                >
+                  <img
+                    src={data?.img}
+                    alt="#"
+                    className="w-full h-full object-center object-cover aspect-video  art-images "
+                  />
 
-                <div class="">
-                  <p class="absolute bottom-[5px] left-2/4 -translate-x-2/4 w-full text-center  text-md text">
-                    {data.title}
-                  </p>
+                  <div class="">
+                    <p class="absolute bottom-[5px] left-2/4 -translate-x-2/4 w-full text-center  text-md text">
+                      {data.title}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

@@ -12,13 +12,18 @@ const Contact = () => {
       className="px-4 max-w-screen-xl mx-auto md:px-8 md:py-16 py-8"
     >
       <div className="">
-        <div className="text-center mb-8">
+        {/* <div className="text-center mb-8">
           <h1 className="title">Contact us</h1>
           <p className="text-gray-200 text-lg text-center font-normal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             beatae <br /> sint tempore in laboriosam eos autem delectus, error
             aperiam illo!
-          </p>
+          </p> 
+        </div>*/}
+        <div>
+          <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">
+            Contact Us
+          </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="col-span-1 flex flex-col gap-3">

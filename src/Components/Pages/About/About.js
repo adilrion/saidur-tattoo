@@ -8,7 +8,7 @@ const About = () => {
           <img
             src="https://images.unsplash.com/photo-1575930005384-8236e807c565?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
             alt=""
-            className=" h-fit md:max-h-[500px] w-full"
+            className="h-full aspect-square object-center object-fill md:max-h-[500px] w-full"
           />
         </div>
         <div className="col-span-12 lg:col-span-8 md:col-span-7 w-full h-full flex flex-col justify-center gap-2 md:gap-3 lg:gap-5">

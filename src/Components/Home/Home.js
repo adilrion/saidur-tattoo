@@ -17,9 +17,8 @@ const Home = () => {
       <About />
       <Service />
       <Tattoo />
-      <Gallery />
       <Contact />
-      <div className="fixed top-2/4 z-[1000] right-0 -translate-y-2/4">
+      <div className="fixed top-2/4 z-[1000] hidden lg:block right-0 -translate-y-2/4">
         <Social />
       </div>
       <Footer />
