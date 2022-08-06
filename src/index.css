@@ -16,7 +16,7 @@ code {
     monospace;
 }
 
-.display {
+.c-display {
   @apply items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8;
 }
 .title {

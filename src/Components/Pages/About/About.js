@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="display">
-      <div className="grid grid-cols-12 gap-5 md:pt-12 pt-8">
+    <section className="c-display">
+      <div className="grid grid-cols-12 gap-5 md:pt-16 pt-8">
         <div className="col-span-12 lg:col-span-4 md:col-span-5 ">
           <img
             src="https://images.unsplash.com/photo-1575930005384-8236e807c565?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"

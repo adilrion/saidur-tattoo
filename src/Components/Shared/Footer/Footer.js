@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="c-bg">
-      <footer class="py-5   rounded-lg shadow display flex flex-col">
+      <footer class="py-5   rounded-lg shadow c-display flex flex-col">
         <div class="sm:flex sm:items-center sm:justify-between w-full border-b border-gray-700 md:pb-10 pb-3">
           <a
             href="https://flowbite.com/"
@@ -13,7 +13,7 @@ const Footer = () => {
           >
             <Link
               to="home"
-              className="text-gray-500 text-3xl font-medium uppercase"
+              className="text-[#e8dc36] opacity-[50%] text-3xl font-bold uppercase"
             >
               Lakshmi
             </Link>

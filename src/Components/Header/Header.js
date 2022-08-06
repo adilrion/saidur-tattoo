@@ -55,13 +55,15 @@ const Header = () => {
               <img
                 src={data.img}
                 alt=""
-                className="aspect-video object-center object-cover h-[60vh] md:h-[70vh] w-full block "
+                className="aspect-video object-center object-cover h-[60vh] md:h-[80vh] w-full block "
               />
               <div className="absolute top-2/4 flex justify-center w-full  flex-col -translate-y-2/4 text-white text-center px-4 gap-y-5">
-                <h1 className="text-2xl md:text-4xl font-medium ">
+                <h1 className="text-2xl md:text-4xl lg:text-7xl font-bold ">
                   {data?.title}
                 </h1>
-                <p className="text-gray-300">{data?.msg}</p>
+                <p className="text-gray-300 px-5 md:px-16 lg:px-96">
+                  {data?.msg}
+                </p>
               </div>
             </SwiperSlide>
           );

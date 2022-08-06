@@ -7,16 +7,19 @@ const Navbar = () => {
   // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "Home", path: "/home" },
-    { title: "Tattoo", path: "/tattoo" },
+    { title: "Service", path: "/service" },
     { title: "About", path: "/about" },
     { title: "Contact", path: "/contact" },
   ];
 
   return (
-    <nav className="c-bg navbar w-full border-b md:border-0 md:static">
-      <div className="display">
+    <nav className="c-bg navbar w-full border-b md:border-0 md:sticky top-0 left-0 z-[100]">
+      <div className="c-display">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <Link to="home" className="text-white text-3xl font-medium uppercase">
+          <Link
+            to="home"
+            className="text-[#e8dc36] text-3xl font-bold uppercase"
+          >
             Lakshmi
           </Link>
           <div className="md:hidden">
