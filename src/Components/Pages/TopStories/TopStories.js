@@ -1,60 +1,99 @@
 import React from "react";
+import news1 from "../../../Assets/topstories1.jpg";
+import { Link } from "react-router-dom";
 
 const TopStories = () => {
   return (
     <section className="c-display">
-       <div className=" md:pt-16 pt-8">
+      <div className=" md:pt-16 pt-8">
         <header className=" text-center">
           <h1 className="title">Top Stories</h1>
-          <p className="text-gray-500 capitalize pt-2">Stories are born<br/> the latest press releases from sidur tatto
-          new and Existing Press Releases
+          <p className="text-gray-500 capitalize pt-2">
+            Stories are born
+            <br /> the latest press releases from sidur tatto new and Existing
+            Press Releases
           </p>
         </header>
-          </div>
-          
-
-          Copied!
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap">
-    <div class="lg:w-2/3 mx-auto">
-      <div class="flex flex-wrap mb-4">
-      <iframe className="aspect-video object-cover h-full w-full" src="https://www.youtube.com/embed/DjgcX_64VO0" title="দেশে বাড়ছে ট্যাটু করার প্রবণতা!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-    
       </div>
-      <div class="flex flex-wrap -mx-2">
-        <div class="px-2 w-1/2">
-          <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-            <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x460"/>
-            <div class="text-center relative z-10 w-full">
-              <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-              <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
+      Copied!
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap">
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap mb-4">
+              <iframe
+                className="aspect-video object-cover h-full w-full rounded"
+                src="https://www.youtube.com/embed/DjgcX_64VO0"
+                title="দেশে বাড়ছে ট্যাটু করার প্রবণতা!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="flex gap-5">
+              <div class=" w-full md:w-1/2 ">
+              <div class="group">
+                  <div class="h-[316px] overflow-hidden relative c-shadow  overflow-hidden rounded">
+                    <img
+                      src={news1}
+                      className="w-full rounded group-hover:translate-y-[-100%] group-hover:mt-[316px]  ease-in-out  duration-[3s]"
+                      alt=""
+                    />
+                    <div className=" absolute bottom-[-150px] h-[145px]  group-hover:translate-y-[-100%]  z-50 ease-in-out  duration-1000 bg-gradient-to-t from-[#000000] to-[#ff014d00] w-full p-5 flex gap-3 flex-col">
+                      <h2 class="text-xl text-gray-200 font-medium title-font">
+                        Shooting Stars fixie paleoe fixie paleo lumbersexual.
+                      </h2>
+                      <a class="text-[#e8dc36] inline-flex items-center">
+                        Learn More
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          class="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" w-full md:w-1/2">
+                <div class="group">
+                  <div class="screen h-[316px] relative c-shadow  overflow-hidden rounded">
+                    <img
+                      src={news1}
+                      className="w-full rounded group-hover:translate-y-[-100%] group-hover:mt-[316px]  ease-in-out  duration-[3s]"
+                      alt=""
+                    />
+                    <div className=" absolute bottom-[-150px] h-[145px]  group-hover:translate-y-[-100%]  z-50 ease-in-out  duration-1000 bg-gradient-to-t rounded-b from-[#000000] to-[#ff014d00] w-full p-5 flex gap-3 flex-col">
+                      <h2 class="text-xl text-gray-200 font-medium title-font">
+                        Shooting Stars fixie paleoe fixie paleo lumbersexual.
+                      </h2>
+                      <a class="text-[#e8dc36] inline-flex items-center">
+                        Learn More
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          class="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="px-2 w-1/2">
-          <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-            <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x420"/>
-            <div class="text-center relative z-10 w-full">
-              <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-              <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </section>
   );
 };
