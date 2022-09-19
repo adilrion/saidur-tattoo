@@ -28,7 +28,7 @@ const Navbar = () => {
             {/* <span>
               <img src={logo} alt="Logo" />
             </span>{" "} */}
-            Saidur <span className="text-white">Tattoo</span>
+            Saidur <span className="text-white text-sm">Tattoo</span>
           </Link>
           <div className="md:hidden">
             <button
