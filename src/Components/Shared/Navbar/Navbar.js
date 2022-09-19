@@ -19,16 +19,16 @@ const Navbar = () => {
 
   return (
     <nav className="c-bg navbar w-full border-b md:border-0 md:sticky top-0 left-0 z-[100]">
-      <div className="c-display">
+      <div className="c-display flex items-center">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link
             to="home"
-            className="text-[#e8dc36] text-3xl font-bold uppercase"
+            className=" text-[#e8dc36] text-3xl font-bold uppercase"
           >
             {/* <span>
               <img src={logo} alt="Logo" />
             </span>{" "} */}
-            Lakshmi
+            Saidur <span className="text-white">Tattoo</span>
           </Link>
           <div className="md:hidden">
             <button

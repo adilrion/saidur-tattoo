@@ -1,8 +1,38 @@
 import React from "react";
+import img1 from "../../../Assets/1.jpeg"
+import img2 from "../../../Assets/2.jpeg"
+import img3 from "../../../Assets/3.jpeg"
+import img4 from "../../../Assets/4.jpeg"
+import img5 from "../../../Assets/5.jpeg"
+import img6 from "../../../Assets/banner1.jpg"
 import Footer from "../../Shared/Footer/Footer";
 import Navbar from "../../Shared/Navbar/Navbar";
 import "./Gallery.css";
 const gallery = [
+  {
+    title: "aa",
+    img: img1
+  },
+  {
+    title: "ab",
+    img: img6,
+  },
+  {
+    title: "ab",
+    img: img2,
+  },
+  {
+    title: "ab",
+    img: img3,
+  },
+  {
+    title: "ab",
+    img: img4,
+  },
+  {
+    title: "ab",
+    img: img5,
+  },
   {
     title: "a",
     img: "https://images.unsplash.com/photo-1655069482983-d87066eefd01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
@@ -57,7 +87,7 @@ const Gallery = () => {
                     index % 2 === 0
                       ? "col-span-4 md:col-span-1"
                       : "col-span-4 md:col-span-2"
-                  } w-full h-full max-h-[450px] art-section  bg-transparent`}
+                  } w-full h-[430px] art-section  bg-transparent`}
                 >
                   <img
                     src={data?.img}

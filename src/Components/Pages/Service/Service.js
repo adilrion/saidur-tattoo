@@ -3,7 +3,6 @@ import earSwelling from "../../../Assets/earSwelling.jpg";
 import LaserTreatment from "../../../Assets/Laser treatment.jpg";
 import Laser from "../../../Assets/Laser.jpg";
 import tattoo from "../../../Assets/tatto.jpg";
-import Tattoo from "../Tattoo/Tattoo";
 import "./Service.css";
 
 const Service = () => {
@@ -13,9 +12,7 @@ const Service = () => {
         <header className=" text-center">
           <h1 className="title">What We Do</h1>
           <p className="text-gray-500">
-            We run a men’s barbershop in its best traditions. <br /> Our guys
-            will help you look stylish and confident, and most importantly,
-            manly
+          We do TATTOO, PEIRCING, TATTOO REMOVE.
           </p>
         </header>
 
@@ -23,11 +20,10 @@ const Service = () => {
           <div className="col-span-1 grid grid-cols-12 gap-5  c-bg rounded overflow-hidden">
             <div className="col-span-8 text-end my-auto">
               <h1 className="uppercase text-gray-200 text-2xl font-space font-semibold">
-                tattoo
+              TATTOO
               </h1>
               <p className="text-gray-500">
-                For premium result, at our barbershop we combine modern technics
-                with traditional ones
+              Our bodies were printed as blank pages to be filled with the ink of our hearts.
               </p>
               <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
             </div>
@@ -49,11 +45,10 @@ const Service = () => {
             </div>
             <div className="col-span-8 text-start my-auto">
               <h1 className="uppercase text-gray-200 text-2xl font-space font-semibold">
-                Ear Swelling
+              PEIRCING
               </h1>
               <p className="text-gray-500">
-                For premium result, at our barbershop we combine modern technics
-                with traditional ones
+              Piercings have a power and magic all their own. They decorate the body, but also enhance the soul
               </p>
               <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
             </div>
@@ -61,11 +56,10 @@ const Service = () => {
           <div className="col-span-1 grid grid-cols-12 gap-5  c-bg rounded overflow-hidden">
             <div className="col-span-8 text-end my-auto">
               <h1 className="uppercase text-gray-200 text-2xl font-space font-semibold">
-                Laser Treatment
+              TATTOO REMOVE
               </h1>
               <p className="text-gray-500">
-                For premium result, at our barbershop we combine modern technics
-                with traditional ones
+              Erase the past by the tattoo removal laser treatment
               </p>
               <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
             </div>
@@ -87,13 +81,12 @@ const Service = () => {
             </div>
             <div className="col-span-8 text-start my-auto">
               <h1 className="uppercase text-gray-200 text-2xl font-space font-semibold">
-                Laser
+                Laser <span className="text-[8px] text-gray-500 capitalize">Coming soon</span>
               </h1>
               <p className="text-gray-500">
-                For premium result, at our barbershop we combine modern technics
-                with traditional ones
+              Not available at this moment Coming soon
               </p>
-              <p className="text-sm text-[#e8dc36] pt-1">From 100 BDT</p>
+              <p className="text-sm text-[#e8dc36] pt-1">From 000 BDT</p>
             </div>
           </div>
         </div>
