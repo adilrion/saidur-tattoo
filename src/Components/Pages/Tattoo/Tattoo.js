@@ -14,6 +14,7 @@ import img4 from "../../../Assets/4.jpeg";
 
 // import required modules
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 const works = [
   {
@@ -76,6 +77,25 @@ const Tattoo = () => {
         </div>
         </Slide>
       </div>
+      <div className="mt-5">
+            <Link
+              to="/gallery"
+              class="text-[#e8dc36] opacity-[50%] inline-flex items-center justify-end w-full"
+            >
+             View More
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </Link>
+          </div>
     </section>
   );
 };
