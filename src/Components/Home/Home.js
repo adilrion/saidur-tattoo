@@ -1,6 +1,6 @@
 import React from "react";
 import Social from "../../Util/Social";
-import Header from "../Header/Header";
+import Header from "../Header/Banner";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Gallery from "../Pages/Gallery/Gallery";

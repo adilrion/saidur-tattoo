@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Tattoo.css";
+import Slide from 'react-reveal/Slide'
 
 // Import Swiper styles
 import "swiper/css";
@@ -37,6 +38,7 @@ const Tattoo = () => {
   return (
     <section id="tattoo" className="px-4 max-w-screen-xl mx-auto md:px-8">
       <div>
+     <Slide bottom >
         <div className="">
           <div>
             <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">
@@ -72,6 +74,7 @@ const Tattoo = () => {
             </Swiper>
           </div>
         </div>
+        </Slide>
       </div>
     </section>
   );

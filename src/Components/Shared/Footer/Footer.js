@@ -7,17 +7,15 @@ const Footer = () => {
     <div className="c-bg">
       <footer class="py-5   rounded-lg shadow c-display flex flex-col">
         <div class="sm:flex sm:items-center sm:justify-between w-full border-b border-gray-700 md:pb-10 pb-3">
-          <a
-            href="https://flowbite.com/"
-            class="flex items-center mb-4 sm:mb-0"
+        <Link
+            to="home"
+            className=" text-[#e8dc36] text-3xl opacity-50 font-bold uppercase"
           >
-            <Link
-              to="home"
-              className="text-[#e8dc36] opacity-[50%] text-3xl font-bold uppercase"
-            >
-              Lakshmi
-            </Link>
-          </a>
+            {/* <span>
+              <img src={logo} alt="Logo" />
+            </span>{" "} */}
+            Saidur <span className="text-white opacity-50 text-sm">Tattoo</span>
+          </Link>
           <div>
             <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 ">
               <li>

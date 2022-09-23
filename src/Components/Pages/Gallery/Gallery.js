@@ -1,4 +1,6 @@
 import React from "react";
+import Zoom from 'react-reveal/Zoom'
+
 import img1 from "../../../Assets/1.jpeg"
 import img2 from "../../../Assets/2.jpeg"
 import img3 from "../../../Assets/3.jpeg"
@@ -78,9 +80,12 @@ const Gallery = () => {
               Gallery
             </h1>
           </div>
+          
           <div className="grid grid-cols-4 grid-flow-row-dense gap-2 relative ">
+    
             {gallery?.map((data, index) => {
               return (
+                
                 <div
                   key={index}
                   className={`${
@@ -88,7 +93,7 @@ const Gallery = () => {
                       ? "col-span-4 md:col-span-1"
                       : "col-span-4 md:col-span-2"
                   } w-full h-[430px] art-section  bg-transparent`}
-                >
+                ><Zoom bottom cascade>
                   <img
                     src={data?.img}
                     alt="#"
@@ -99,11 +104,14 @@ const Gallery = () => {
                     <p class="absolute bottom-[5px] left-2/4 -translate-x-2/4 w-full text-center  text-md text">
                       {data.title}
                     </p>
+                    </div>
+                    </Zoom>
                   </div>
-                </div>
+                 
               );
             })}
-          </div>
+            
+            </div>
         </div>
       </div>
       <Footer />

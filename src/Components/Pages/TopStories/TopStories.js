@@ -1,11 +1,13 @@
 import React from "react";
 import news1 from "../../../Assets/topstories1.jpg";
+import Slide from 'react-reveal/Slide'
 import { Link } from "react-router-dom";
 
 const TopStories = () => {
   return (
     <section className="c-display">
       <div className=" md:pt-16 pt-8">
+        <Slide bottom cascade>
         <header className=" text-center">
           <h1 className="title">Top Stories</h1>
           <p className="text-gray-500 capitalize pt-2">
@@ -13,13 +15,15 @@ const TopStories = () => {
             <br /> the latest press releases from sidur tatto new and Existing
             Press Releases
           </p>
-        </header>
+          </header>
+          </Slide>
       </div>
       Copied!
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap">
           <div class="lg:w-2/3 mx-auto">
-            <div class="flex flex-wrap mb-4">
+            <Slide bottom cascade>
+            <div class="flex flex-wrap ">
               <iframe
                 className="aspect-video object-cover h-full w-full rounded"
                 src="https://www.youtube.com/embed/DjgcX_64VO0"
@@ -28,8 +32,10 @@ const TopStories = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            </div>
-            <div class="flex gap-5">
+              </div>
+              </Slide>
+            <div class="flex gap-4 mt-4">
+              <Slide left cascade>
               <div class=" w-full md:w-1/2 ">
               <div class="group">
                   <div class="h-[316px] overflow-hidden relative c-shadow  overflow-hidden rounded">
@@ -59,7 +65,9 @@ const TopStories = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+                </div>
+              </Slide>
+              <Slide right cascade>
               <div class=" w-full md:w-1/2">
                 <div class="group">
                   <div class="screen h-[316px] relative c-shadow  overflow-hidden rounded">
@@ -89,7 +97,8 @@ const TopStories = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+                </div>
+                </Slide>
             </div>
           </div>
         </div>

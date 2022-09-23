@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import Slide from 'react-reveal/Slide'
 import { ImPhone } from "react-icons/im";
 import { BsEnvelope } from "react-icons/bs";
 import { RiSendPlaneLine } from "react-icons/ri";
@@ -11,15 +12,8 @@ const Contact = () => {
       id="contact"
       className="px-4 max-w-screen-xl mx-auto md:px-8 md:py-16 py-8"
     >
+      <Slide bottom cascade>
       <div className="">
-        {/* <div className="text-center mb-8">
-          <h1 className="title">Contact us</h1>
-          <p className="text-gray-200 text-lg text-center font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            beatae <br /> sint tempore in laboriosam eos autem delectus, error
-            aperiam illo!
-          </p> 
-        </div>*/}
         <div>
           <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">
             Contact Us
@@ -118,7 +112,8 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
+        </div>
+        </Slide>
     </section>
   );
 };
