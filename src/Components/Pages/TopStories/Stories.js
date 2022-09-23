@@ -43,8 +43,9 @@ const Stories = () => {
                   </div>
                 </Slide>
                 <div class="grid grid-cols-2 gap-4 mt-4">
-                  <Slide left cascade>
                     <div class="md:col-span-1 col-span-2">
+                  <Slide left cascade>
+                      <div>
                       <div class="group">
                         <div class="h-[316px] overflow-hidden relative c-shadow  overflow-hidden rounded">
                           <img
@@ -76,8 +77,10 @@ const Stories = () => {
                       </div>
                     </div>
                   </Slide>
-                  <Slide right cascade>
+                    </div>
                     <div class="md:col-span-1 col-span-2">
+                  <Slide right cascade>
+                      <div>
                       <div class="group">
                         <div class="screen h-[316px] relative c-shadow  overflow-hidden rounded">
                           <img
@@ -107,10 +110,12 @@ const Stories = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+               </div>
                   </Slide>
-                  <Slide right cascade>
+                    </div>
                     <div class="md:col-span-1 col-span-2">
+                  <Slide left cascade>
+                      <div>
                       <div class="group">
                         <div class="screen h-[316px] relative c-shadow  overflow-hidden rounded">
                           <img
@@ -140,10 +145,12 @@ const Stories = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                     </div>
                   </Slide>
-                  <Slide right cascade>
+                    </div>
                     <div class="md:col-span-1 col-span-2">
+                  <Slide right cascade>
+                      <div>
                       <div class="group">
                         <div class="screen h-[316px] relative c-shadow  overflow-hidden rounded">
                           <img
@@ -173,10 +180,12 @@ const Stories = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                   </div>
                   </Slide>
-                  <Slide right cascade>
+                    </div>
                     <div class="md:col-span-1 col-span-2">
+                  <Slide left cascade>
+                      <div>
                       <div class="group">
                         <div class="screen h-[316px] relative c-shadow  overflow-hidden rounded">
                           <img
@@ -208,6 +217,7 @@ const Stories = () => {
                       </div>
                     </div>
                   </Slide>
+                    </div>
                 </div>
               </div>
             </div>

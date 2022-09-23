@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 // import required modules
-import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
+import { Autoplay, EffectFade, Pagination } from "swiper";
 
 const sl = [
   {
@@ -39,20 +39,20 @@ const Header = () => {
       <Swiper
         spaceBetween={30}
         effect={"fade"}
-        navigation={true}
+       
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
+        
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+        modules={[Autoplay, EffectFade, Pagination]}
         className="mySwiper"
       >
         {sl?.map((data, index) => {
           return (
+
+            
             <SwiperSlide className="relative ">
               <div className="banner "></div>
               <img
