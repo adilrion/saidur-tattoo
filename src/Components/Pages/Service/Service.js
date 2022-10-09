@@ -63,8 +63,8 @@ const Service = () => {
           <Slide left >
           <div className="col-span-1 grid grid-cols-12 gap-5  c-bg rounded overflow-hidden">
             <div className="col-span-8 text-end my-auto">
-              <h1 className="uppercase text-gray-200 text-2xl font-space font-semibold">
-              TATTOO REMOVE
+              <h1 className="uppercase text-gray-200 text-2xl font-space font-semibold uppercase">
+              laser and tattoo remove
               </h1>
               <p className="text-gray-500">
               Erase the past by the tattoo removal laser treatment
@@ -90,8 +90,8 @@ const Service = () => {
               />
             </div>
             <div className="col-span-8 text-start my-auto">
-              <h1 className="uppercase text-gray-200 text-2xl font-space font-semibold">
-                Laser <span className="text-[8px] text-gray-500 capitalize">Coming soon</span>
+              <h1 className=" text-gray-200 text-2xl font-space font-semibold uppercase">
+              permanent skin makeup {/* <span className="text-[8px] text-gray-500 capitalize">Coming soon</span> */}
               </h1>
               <p className="text-gray-500">
               Not available at this moment Coming soon

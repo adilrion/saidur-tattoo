@@ -1,9 +1,13 @@
 01. Name: Saidur Tattoo Studio (done)
 02. video when open (done)
 03. sectors: tattoo, piercing, laser and tattoo remove, permanent skin makeup admin panel to add photos and videos 	  
-04. location in the map 
+04. location in the map  (done)
 05. contact (done)
 06. email (done)
 07. sidebar : facebook, intagram, whatsapp (done)
 08. transparent logo. (done)
 09. navbar white: if needed logo block in white (done)
+
+
+NEED:
+map link, gmail, facebook, intagram, whatsapp, linkedin, pinterest all social link, phone nubmer,Publishing news link, all service photo heigh width 200px and service description, address and Logo width-150px height-60px must png format,

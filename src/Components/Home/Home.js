@@ -3,6 +3,7 @@ import Social from "../../Util/Social";
 import Header from "../Header/Banner";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
+import ContactHome from "../Pages/Contact/ContactHome";
 import Service from "../Pages/Service/Service";
 import Tattoo from "../Pages/Tattoo/Tattoo";
 import TopStories from "../Pages/TopStories/TopStories";
@@ -18,7 +19,7 @@ const Home = () => {
       <Service />
       <Tattoo />
       <TopStories/>
-      <Contact />
+      <ContactHome />
       <div className="fixed top-2/4 z-[1000] hidden lg:block right-0 -translate-y-2/4">
         <Social />
       </div>
