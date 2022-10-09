@@ -1,0 +1,9 @@
+01. Name: Saidur Tattoo Studio (done)
+02. video when open (done)
+03. sectors: tattoo, peircing, laser and tattoo remove, permanent skin makeup admin panel to add photos and videos 	  
+04. location in the map 
+05. contact (done)
+06. email (done)
+07. sidebar : facebook, intagram, whatsapp (done)
+08. transparent logo. (done)
+09. navbar white: if needed logo block in white (done)

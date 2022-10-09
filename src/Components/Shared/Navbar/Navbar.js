@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="c-bg navbar w-full border-b md:border-0 md:sticky top-0 left-0 z-[100]">
+    <nav className="c-bg navbar w-full border-b md:border-0 md:absolute top-0 left-0 z-[100]">
       <div className="c-display md:flex items-center">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link

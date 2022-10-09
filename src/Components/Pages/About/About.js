@@ -8,7 +8,7 @@ const About = () => {
       <div className="grid grid-cols-12 gap-5 md:pt-16 pt-8">
       <Slide left cascade>
         <div className="col-span-12 lg:col-span-4 md:col-span-5 ">
-       
+      
           <img
             src={about}
             alt=""
@@ -44,8 +44,8 @@ const About = () => {
             artist keeps into account all the details that are especially in the
             art.
             </p>
-          
-          </div>
+                    </div>
+                  
           </Slide>
       </div>
     </section>
