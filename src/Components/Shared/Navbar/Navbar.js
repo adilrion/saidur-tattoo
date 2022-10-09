@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { ImPhone } from "react-icons/im";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 import { HashLink } from "react-router-hash-link";
+import logo from "../../../Assets/logo.png"
+import "./Navbar.css";
 // import logo from "../../../Assets/logo.png";
 
 const Navbar = () => {
@@ -20,15 +21,12 @@ const Navbar = () => {
   return (
     <nav className="c-bg navbar w-full border-b md:border-0 md:absolute top-0 left-0 z-[100]">
       <div className="c-display md:flex items-center">
-        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <div className="flex items-center justify-between py-3  md:block">
           <Link
             to="home"
             className=" text-[#e8dc36] text-3xl font-bold uppercase"
           >
-            {/* <span>
-              <img src={logo} alt="Logo" />
-            </span>{" "} */}
-            Saidur <span className="text-white text-sm">Tattoo</span>
+          <img className="w-[150px] h-[60px] object-fill "  src={logo} alt="logo"/>
           </Link>
           <div className="md:hidden">
             <button

@@ -1,12 +1,28 @@
-import React from "react";
-import "./Contact.css";
-import Slide from 'react-reveal/Slide'
-import { ImPhone } from "react-icons/im";
+import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from "react";
 import { BsEnvelope } from "react-icons/bs";
-import { RiSendPlaneLine } from "react-icons/ri";
+import { ImPhone } from "react-icons/im";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { RiSendPlaneLine } from "react-icons/ri";
+import Slide from 'react-reveal/Slide';
+import "./Contact.css";
 
 const Contact = () => {
+
+  const form = useRef();
+  const [massage, setMassage] = useState(false)
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_cs5i1o6', 'template_wee22ub', form.current, '9b7oi8-Yjt2GAeazI')
+      .then((result) => {
+          console.log(result.text);
+          setMassage(true);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <section
       id="contact"
@@ -55,18 +71,18 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-span-1 my-[15px]">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="relative z-0 w-full group ">
                 <input
                   type="text"
-                  name="name"
+                  name="user_name"
                   id="name"
-                  className="block py-3.5 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2 border-gray-500 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
+                  className="block py-3.5 px-0 w-full text-md text-[#f2f2f2ee] bg-transparent border-0 border-b-2 border-gray-500 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
                   placeholder=" "
                   required=""
                 />
                 <label
-                  htmlFor="name"
+                  htmlFor="user_name"
                   className="absolute text-xl font-medium text-gray-700  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#e8dc36]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Name
@@ -75,13 +91,13 @@ const Contact = () => {
               <div className="relative z-0 my-6 w-full group">
                 <input
                   type="email"
-                  name="floating_email"
-                  className="block py-3.5 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2 border-gray-500 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
+                  name="user_email"
+                  className="block py-3.5 px-0 w-full text-md text-[#f2f2f2ee] bg-transparent border-0 border-b-2 border-gray-500 appearance-none     focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
                   placeholder=" "
                   required=""
                 />
                 <label
-                  htmlFor="floating_email"
+                  htmlFor="user_email"
                   className="absolute text-xl font-medium text-gray-700  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#e8dc36]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Email
@@ -91,13 +107,13 @@ const Contact = () => {
                 <textarea
                   rows="5"
                   type="text"
-                  name="floating_email"
-                  className="block py-4 px-0 w-full text-md text-[#2e2e2eee] bg-transparent border-0 border-b-2  appearance-none border-gray-500 focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
+                  name="message"
+                  className="block py-4 px-0 w-full text-md text-[#f2f2f2ee] bg-transparent border-0 border-b-2  appearance-none border-gray-500 focus:outline-none focus:ring-0 focus:border-[#e8dc36] peer"
                   placeholder=" "
                   required=""
                 />
                 <label
-                  htmlFor="floating_email"
+                  htmlFor="message"
                   className="absolute text-xl font-medium text-gray-700  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#e8dc36]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Type Your Massage..

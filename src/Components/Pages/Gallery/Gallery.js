@@ -73,7 +73,7 @@ const Gallery = () => {
   return (
     <>
       <Navbar />
-      <div id="gallery" className="c-display md:pb-14 py-8">
+      <div id="gallery" className="c-display md:pb-14 py-8 mt-14">
         <div>
           <div>
             <h1 className="text-gray-50 text-2xl mb-5  border-b-2 w-fit border-[#e8dc36]">

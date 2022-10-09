@@ -3,7 +3,6 @@ import Social from "../../Util/Social";
 import Header from "../Header/Banner";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
-import Gallery from "../Pages/Gallery/Gallery";
 import Service from "../Pages/Service/Service";
 import Tattoo from "../Pages/Tattoo/Tattoo";
 import TopStories from "../Pages/TopStories/TopStories";

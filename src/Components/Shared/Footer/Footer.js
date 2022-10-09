@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../Assets/logo.png"
 import "./Footer.css";
 
 const Footer = () => {
@@ -9,12 +10,12 @@ const Footer = () => {
         <div class="sm:flex sm:items-center sm:justify-between w-full border-b border-gray-700 md:pb-10 pb-3">
         <Link
             to="home"
-            className=" text-[#e8dc36] text-3xl opacity-50 font-bold uppercase"
+            className=" text-[#e8dc36] text-3xl  font-bold uppercase"
           >
-            {/* <span>
-              <img src={logo} alt="Logo" />
-            </span>{" "} */}
-            Saidur <span className="text-white opacity-50 text-sm">Tattoo</span>
+             <span>
+              <img className="w-[150px] h-[60px] object-fill " src={logo} alt="Logo" />
+            </span>{" "} 
+           
           </Link>
           <div>
             <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 ">
