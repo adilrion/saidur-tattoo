@@ -11,3 +11,5 @@
 
 NEED:
 map link, gmail, facebook, intagram, whatsapp, linkedin, pinterest all social link, phone nubmer,Publishing news link, all service photo heigh width 200px and service description, address and Logo width-150px height-60px must png format,
+
+Final Check: https://saidur-tattoo.netlify.app/

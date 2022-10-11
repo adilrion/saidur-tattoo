@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Zoom from 'react-reveal/Zoom'
+
+import sanityClient from "../../../client";
 
 import img1 from "../../../Assets/1.jpeg"
 import img2 from "../../../Assets/2.jpeg"
@@ -70,6 +72,28 @@ const gallery = [
 ];
 
 const Gallery = () => {
+
+
+  const [images, setImages] = useState(null);
+
+	useEffect(() => {
+		sanityClient
+			.fetch(
+				`*[_type == "shareImages"]{
+      title,
+      slug,
+      image{
+        asset->{
+          _id,
+          url
+        },
+      },
+    }`
+			)
+			.then((data) => setImages(data))
+			.catch(console.error);
+	}, []);
+
   return (
     <>
       <Navbar />
@@ -83,19 +107,19 @@ const Gallery = () => {
           
           <div className="grid grid-cols-4 grid-flow-row-dense gap-2 relative ">
     
-            {gallery?.map((data, index) => {
+            {images?.map((data, index) => {
               return (
                 
                 <div
                   key={index}
                   className={`${
                     index % 2 === 0
-                      ? "col-span-4 md:col-span-1"
-                      : "col-span-4 md:col-span-2"
+                      ? "col-span-4 md:col-span-1 art-section "
+                      : "col-span-4 md:col-span-2 art-section "
                   } w-full h-[430px] art-section  bg-transparent`}
-                ><Zoom bottom cascade>
+                ><Zoom bottom>
                   <img
-                    src={data?.img}
+                    src={data?.image?.asset?.url}
                     alt="#"
                     className="w-full h-full object-center object-cover aspect-video  art-images "
                   />

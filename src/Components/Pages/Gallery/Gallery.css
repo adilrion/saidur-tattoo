@@ -11,6 +11,8 @@
 .art-section:hover .art-images {
   transform: scale(1.1);
   cursor: pointer;
+  
+  
 }
 
 .text {
