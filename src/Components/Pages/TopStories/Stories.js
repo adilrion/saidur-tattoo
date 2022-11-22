@@ -13,7 +13,7 @@ const Stories = () => {
     <>
       <Navbar />
       <section id="stories">
-        <section className="c-display md:py-16 py-8">
+        <section className="c-display md:py-24 py-8">
           <div className=" ">
             <Slide bottom cascade>
               <header className=" text-center">
@@ -49,16 +49,18 @@ const Stories = () => {
                       <div class="group">
                         <div class="h-[316px] overflow-hidden relative c-shadow  overflow-hidden rounded">
                           <img
-                            src={news1}
+                              src={news1}
                             className="w-fit rounded group-hover:translate-y-[-100%] group-hover:mt-[316px]  ease-in-out  duration-[3s]"
                             alt=""
                           />
                           <div className=" absolute bottom-[-150px] h-[145px]  group-hover:translate-y-[-100%]  z-50 ease-in-out  duration-1000 bg-gradient-to-t from-[#000000] to-[#ff014d00] w-full p-5 flex gap-3 flex-col">
                             <h2 class="text-xl text-gray-200 font-medium title-font">
-                              Shooting Stars fixie paleoe fixie paleo
-                              lumbersexual.
+                            Written on the skin
                             </h2>
-                            <a class="text-[#e8dc36] inline-flex items-center">
+                              <a
+                                href="https://archive.dhakatribune.com/feature/2019/09/14/written-on-the-skin"
+                                target="_blank"
+                                class="text-[#e8dc36] inline-flex items-center">
                               Read More
                               <svg
                                 fill="none"
@@ -195,10 +197,9 @@ const Stories = () => {
                           />
                           <div className=" absolute bottom-[-150px] h-[145px]  group-hover:translate-y-[-100%]  z-50 ease-in-out  duration-1000 bg-gradient-to-t rounded-b from-[#000000] to-[#ff014d00] w-full p-5 flex gap-3 flex-col">
                             <h2 class="text-xl text-gray-200 font-medium title-font">
-                              Shooting Stars fixie paleoe fixie paleo
-                              lumbersexual.
+                            Tattoo art in Bangladesh
                             </h2>
-                            <a class="text-[#e8dc36] inline-flex items-center">
+                            <a href="https://dailyasianage.com/news/286217/tattoo-art-in-bangladesh" target="_blank" class="text-[#e8dc36] inline-flex items-center">
                               Read More
                               <svg
                                 fill="none"
